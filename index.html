@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Card Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./confetti.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card grid--xl">
+        <div class="card--header grid--sm text-center">
+          <h1 class="h1">Try FREE for 4 weeks</h1>
+          <p>We uncover the facts around the clock, all over the globe.</p>
+        </div>
+        <div class="grid--lg">
+          <label>
+            <input type="radio" value="monthly" name="deal-yo" />
+            <div class="flex--lg">
+              <img src="/check--empty.svg" class="check--empty" alt="" />
+              <img src="/check.svg" class="check" alt="" />
+              <div class="grid--sm">
+                <p class="uppercase">Monthly</p>
+                <div class="grid--xs">
+                  <p>4 weeks for free</p>
+                  <p>Then $3 every month for the first year</p>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label>
+            <input type="radio" value="yearly" name="deal-yo" />
+            <div class="flex--lg">
+              <img src="/check--empty.svg" class="check--empty" alt="" />
+              <img src="/check.svg" class="check" alt="" />
+              <div class="grid--sm">
+                <p class="pill">Best value</p>
+                <div class="grid--xs">
+                  <p class="uppercase">Yearly</p>
+                  <p>4 weeks for free</p>
+                  <p>Then $30 for the first year</p>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="grid--md place-items-center">
+          <button class="btn btn--primary">Continue</button>
+          <button
+            class="btn btn--outline flex--sm paypal place-items-center"
+            aria-label="Pay with paypal"
+          >
+            <span>Continue with</span>
+            <img src="paypal.png" alt="" />
+          </button>
+        </div>
+        <a href="#">View more offers</a>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  </body>
+</html>
